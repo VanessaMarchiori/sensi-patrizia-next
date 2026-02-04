@@ -1,19 +1,22 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
-  --foreground-rgb: 249, 247, 242; /* creme */
-  --background-rgb: 125, 150, 126; /* sauge */
+  /* Texte : On garde le Brun Terre (#594A42) qui va super bien avec le vert */
+  --foreground-rgb: 89, 74, 66;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-rgb));
+
+/*background: radial-gradient(circle at center, #E4E6E1 0%, #CCD1C8 100%);*/
+
+  background: radial-gradient(circle at center, #EFE5DE 0%, #DBC6BC 100%);
+
+  min-height: 100vh;
   overflow-x: hidden;
 }
 
-/* On garde notre animation de révélation futuriste */
+/* Animation inchangée */
 .reveal {
   view-timeline-name: --item;
   view-timeline-axis: block;

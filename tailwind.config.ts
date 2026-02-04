@@ -1,24 +1,18 @@
-import type { Config } from "tailwindcss";
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
-        sauge: '#7D967E',
-        gold: '#D4AF37',
-        creme: '#F9F7F2',
-      },
-      fontFamily: {
-        serif: ['var(--font-cormorant)', 'serif'],
-        sans: ['var(--font-montserrat)', 'sans-serif'],
+        sauge: "#7D967E",
+        creme: "#F9F7F2",
+        gold: "#C5A059",
       },
     },
   },
   plugins: [],
-};
-export default config;
+}
